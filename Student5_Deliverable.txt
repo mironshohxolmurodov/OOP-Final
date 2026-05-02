@@ -1,0 +1,31 @@
+Student 5 Search, Catalog and Integration
+
+Design files:
+Student5_Use_Case_Diagram.svg
+Student5_Search_Interface_Diagram.svg
+Library_Class_Diagram.svg
+Activity_Checkout.svg
+Activity_Return.svg
+Activity_Renew.svg
+
+Implementation files:
+Search.java
+Catalog.java
+Library.java
+Student5Demo.java
+
+Search methods:
+Title
+Author
+Subject
+Publication Date
+
+Integration flow:
+Search
+Check-out
+Renew
+Return
+
+Run from the combined project folder:
+javac *.java
+java Student5Demo
