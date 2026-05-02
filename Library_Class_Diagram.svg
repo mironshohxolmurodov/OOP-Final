@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#f8fafc"/>
+  <text x="700" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Library Management System Class Diagram</text>
+  <g font-family="Arial, sans-serif" stroke="#334155" stroke-width="2" fill="#ffffff">
+    <rect x="60" y="90" width="250" height="150" rx="8"/><line x1="60" y1="130" x2="310" y2="130"/><line x1="60" y1="175" x2="310" y2="175"/>
+    <text x="185" y="116" text-anchor="middle" font-size="18" font-weight="700">Library</text>
+    <text x="80" y="155" font-size="14">name</text>
+    <text x="80" y="200" font-size="14">catalog</text>
+    <text x="80" y="222" font-size="14">members</text>
+    <rect x="380" y="90" width="250" height="170" rx="8"/><line x1="380" y1="130" x2="630" y2="130"/><line x1="380" y1="200" x2="630" y2="200"/>
+    <text x="505" y="116" text-anchor="middle" font-size="18" font-weight="700">Catalog</text>
+    <text x="400" y="155" font-size="14">bookItems</text>
+    <text x="400" y="180" font-size="14">supports 4 searches</text>
+    <text x="400" y="225" font-size="14">searchByTitle</text>
+    <text x="400" y="247" font-size="14">searchByAuthor</text>
+    <text x="400" y="269" font-size="14">searchBySubject</text>
+    <rect x="700" y="90" width="250" height="170" rx="8"/><line x1="700" y1="130" x2="950" y2="130"/><line x1="700" y1="200" x2="950" y2="200"/>
+    <text x="825" y="116" text-anchor="middle" font-size="18" font-weight="700">Book</text>
+    <text x="720" y="155" font-size="14">isbn</text>
+    <text x="720" y="177" font-size="14">title</text>
+    <text x="720" y="199" font-size="14">subject</text>
+    <text x="720" y="225" font-size="14">publisher</text>
+    <text x="720" y="247" font-size="14">authors</text>
+    <rect x="1020" y="90" width="290" height="190" rx="8"/><line x1="1020" y1="130" x2="1310" y2="130"/><line x1="1020" y1="220" x2="1310" y2="220"/>
+    <text x="1165" y="116" text-anchor="middle" font-size="18" font-weight="700">BookItem</text>
+    <text x="1040" y="155" font-size="14">barcode</text>
+    <text x="1040" y="177" font-size="14">publicationDate</text>
+    <text x="1040" y="199" font-size="14">status</text>
+    <text x="1040" y="245" font-size="14">checkout()</text>
+    <text x="1040" y="267" font-size="14">setReservation()</text>
+    <rect x="80" y="340" width="240" height="150" rx="8"/><line x1="80" y1="380" x2="320" y2="380"/><line x1="80" y1="430" x2="320" y2="430"/>
+    <text x="200" y="366" text-anchor="middle" font-size="18" font-weight="700">Account</text>
+    <text x="100" y="405" font-size="14">id</text>
+    <text x="100" y="427" font-size="14">password</text>
+    <text x="100" y="455" font-size="14">status</text>
+    <rect x="380" y="340" width="240" height="120" rx="8"/><line x1="380" y1="380" x2="620" y2="380"/>
+    <text x="500" y="366" text-anchor="middle" font-size="18" font-weight="700">Member</text>
+    <text x="400" y="408" font-size="14">dateOfMembership</text>
+    <text x="400" y="430" font-size="14">totalBooksCheckedout</text>
+    <rect x="690" y="340" width="240" height="100" rx="8"/><line x1="690" y1="380" x2="930" y2="380"/>
+    <text x="810" y="366" text-anchor="middle" font-size="18" font-weight="700">Librarian</text>
+    <text x="710" y="408" font-size="14">manage books/users</text>
+    <rect x="1000" y="340" width="280" height="140" rx="8"/><line x1="1000" y1="380" x2="1280" y2="380"/><line x1="1000" y1="430" x2="1280" y2="430"/>
+    <text x="1140" y="366" text-anchor="middle" font-size="18" font-weight="700">BookLending</text>
+    <text x="1020" y="405" font-size="14">creationDate</text>
+    <text x="1020" y="427" font-size="14">dueDate</text>
+    <text x="1020" y="455" font-size="14">renew()</text>
+    <rect x="160" y="580" width="260" height="120" rx="8"/><line x1="160" y1="620" x2="420" y2="620"/>
+    <text x="290" y="606" text-anchor="middle" font-size="18" font-weight="700">BookReservation</text>
+    <text x="180" y="648" font-size="14">creationDate</text>
+    <text x="180" y="670" font-size="14">status</text>
+    <rect x="500" y="580" width="220" height="120" rx="8"/><line x1="500" y1="620" x2="720" y2="620"/>
+    <text x="610" y="606" text-anchor="middle" font-size="18" font-weight="700">Fine</text>
+    <text x="520" y="648" font-size="14">amount</text>
+    <text x="520" y="670" font-size="14">collectFine()</text>
+    <rect x="800" y="580" width="240" height="120" rx="8"/><line x1="800" y1="620" x2="1040" y2="620"/>
+    <text x="920" y="606" text-anchor="middle" font-size="18" font-weight="700">Notification</text>
+    <text x="820" y="648" font-size="14">content</text>
+    <text x="820" y="670" font-size="14">sendNotification()</text>
+    <rect x="1120" y="580" width="220" height="120" rx="8"/><line x1="1120" y1="620" x2="1340" y2="620"/>
+    <text x="1230" y="606" text-anchor="middle" font-size="18" font-weight="700">Rack</text>
+    <text x="1140" y="648" font-size="14">number</text>
+    <text x="1140" y="670" font-size="14">locationIdentifier</text>
+  </g>
+  <g stroke="#475569" stroke-width="2" fill="none">
+    <line x1="310" y1="165" x2="380" y2="165"/>
+    <line x1="630" y1="175" x2="700" y2="175"/>
+    <line x1="950" y1="175" x2="1020" y2="175"/>
+    <line x1="200" y1="340" x2="200" y2="240"/>
+    <line x1="500" y1="340" x2="320" y2="340"/>
+    <line x1="810" y1="340" x2="320" y2="340"/>
+    <line x1="1140" y1="340" x2="1140" y2="280"/>
+    <line x1="1140" y1="480" x2="920" y2="580"/>
+    <line x1="1140" y1="480" x2="610" y2="580"/>
+    <line x1="1140" y1="480" x2="290" y2="580"/>
+    <line x1="1165" y1="280" x2="1230" y2="580"/>
+  </g>
+</svg>

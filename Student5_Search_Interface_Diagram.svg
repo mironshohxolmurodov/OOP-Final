@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760">
+  <rect width="1250" height="760" fill="#f8fafc"/>
+  <text x="625" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Student 5 Search Interface Diagram</text>
+  <g font-family="Arial, sans-serif" stroke="#334155" stroke-width="2">
+    <rect x="70" y="105" width="310" height="190" rx="8" fill="#eff6ff"/>
+    <line x1="70" y1="150" x2="380" y2="150"/>
+    <text x="225" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#1e3a8a">&lt;&lt;interface&gt;&gt; Search</text>
+    <text x="95" y="180" font-size="15" fill="#111827">searchByTitle(String)</text>
+    <text x="95" y="210" font-size="15" fill="#111827">searchByAuthor(String)</text>
+    <text x="95" y="240" font-size="15" fill="#111827">searchBySubject(String)</text>
+    <text x="95" y="270" font-size="15" fill="#111827">searchByPublicationDate(LocalDate)</text>
+    <rect x="470" y="105" width="330" height="265" rx="8" fill="#f0fdf4"/>
+    <line x1="470" y1="150" x2="800" y2="150"/>
+    <text x="635" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#14532d">Catalog</text>
+    <text x="495" y="180" font-size="15" fill="#111827">bookItems: Map&lt;String, BookItem&gt;</text>
+    <line x1="470" y1="200" x2="800" y2="200"/>
+    <text x="495" y="230" font-size="15" fill="#111827">addBookItem(BookItem): boolean</text>
+    <text x="495" y="260" font-size="15" fill="#111827">removeBookItem(String): boolean</text>
+    <text x="495" y="290" font-size="15" fill="#111827">findByBarcode(String): BookItem</text>
+    <text x="495" y="320" font-size="15" fill="#111827">getAvailableBookItems(): List&lt;BookItem&gt;</text>
+    <text x="495" y="350" font-size="15" fill="#111827">implements all Search methods</text>
+    <rect x="890" y="105" width="290" height="255" rx="8" fill="#fff7ed"/>
+    <line x1="890" y1="150" x2="1180" y2="150"/>
+    <text x="1035" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#7c2d12">Library</text>
+    <text x="915" y="180" font-size="15" fill="#111827">name: String</text>
+    <text x="915" y="210" font-size="15" fill="#111827">catalog: Catalog</text>
+    <text x="915" y="240" font-size="15" fill="#111827">members: List&lt;Member&gt;</text>
+    <text x="915" y="270" font-size="15" fill="#111827">librarians: List&lt;Librarian&gt;</text>
+    <line x1="890" y1="290" x2="1180" y2="290"/>
+    <text x="915" y="320" font-size="15" fill="#111827">checkoutBook(String, String)</text>
+    <text x="915" y="345" font-size="15" fill="#111827">returnBook(String)</text>
+    <rect x="470" y="465" width="330" height="170" rx="8" fill="#fef2f2"/>
+    <line x1="470" y1="510" x2="800" y2="510"/>
+    <text x="635" y="494" text-anchor="middle" font-size="18" font-weight="700" fill="#7f1d1d">BookItem</text>
+    <text x="495" y="540" font-size="15" fill="#111827">barcode: String</text>
+    <text x="495" y="570" font-size="15" fill="#111827">status: BookStatus</text>
+    <text x="495" y="600" font-size="15" fill="#111827">rack: Rack</text>
+    <text x="495" y="625" font-size="15" fill="#111827">extends Book</text>
+    <rect x="70" y="465" width="310" height="150" rx="8" fill="#eef2ff"/>
+    <line x1="70" y1="510" x2="380" y2="510"/>
+    <text x="225" y="494" text-anchor="middle" font-size="18" font-weight="700" fill="#312e81">Book</text>
+    <text x="95" y="540" font-size="15" fill="#111827">isbn, title, subject</text>
+    <text x="95" y="570" font-size="15" fill="#111827">publisher, language</text>
+    <text x="95" y="600" font-size="15" fill="#111827">authors: List&lt;Author&gt;</text>
+    <rect x="890" y="465" width="290" height="140" rx="8" fill="#ecfeff"/>
+    <line x1="890" y1="510" x2="1180" y2="510"/>
+    <text x="1035" y="494" text-anchor="middle" font-size="18" font-weight="700" fill="#164e63">Student5Demo</text>
+    <text x="915" y="540" font-size="15" fill="#111827">creates sample library</text>
+    <text x="915" y="570" font-size="15" fill="#111827">runs all 4 searches</text>
+    <text x="915" y="595" font-size="15" fill="#111827">checks out, renews, returns book</text>
+  </g>
+  <g stroke="#475569" stroke-width="2" fill="none" font-family="Arial, sans-serif" font-size="13">
+    <line x1="470" y1="210" x2="380" y2="210" stroke-dasharray="8 6"/>
+    <polygon points="390,202 380,210 390,218" fill="#475569"/>
+    <text x="410" y="195" fill="#475569">implements</text>
+    <line x1="890" y1="210" x2="800" y2="210"/>
+    <polygon points="810,202 800,210 810,218" fill="#475569"/>
+    <text x="822" y="195" fill="#475569">has</text>
+    <line x1="635" y1="370" x2="635" y2="465"/>
+    <polygon points="627,455 635,465 643,455" fill="#475569"/>
+    <text x="648" y="425" fill="#475569">stores</text>
+    <line x1="470" y1="550" x2="380" y2="550"/>
+    <polygon points="390,542 380,550 390,558" fill="#475569"/>
+    <text x="410" y="535" fill="#475569">extends</text>
+    <line x1="1035" y1="465" x2="1035" y2="360"/>
+    <polygon points="1027,370 1035,360 1043,370" fill="#475569"/>
+    <text x="1050" y="420" fill="#475569">uses</text>
+  </g>
+</svg>
