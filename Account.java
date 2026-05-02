@@ -6,8 +6,17 @@ public abstract class Account {
     private Person        person;
 
     public Account(String id, String password, Person person) {
+        if (id == null || id.isBlank()) {
+            throw new IllegalArgumentException("Account id cannot be empty");
+        }
+        if (password == null || password.isBlank()) {
+            throw new IllegalArgumentException("Password cannot be empty");
+        }
+        if (person == null) {
+            throw new IllegalArgumentException("Person cannot be null");
+        }
         this.id       = id;
-        this.password = password;
+        this.password = PasswordUtil.isHashed(password) ? password : PasswordUtil.hashPassword(password);
         this.person   = person;
         this.status   = AccountStatus.ACTIVE;
     }
@@ -20,8 +29,12 @@ public abstract class Account {
         if (newPassword == null || newPassword.isBlank()) {
             return false;
         }
-        this.password = newPassword;
+        this.password = PasswordUtil.hashPassword(newPassword);
         return true;
+    }
+
+    public boolean verifyPassword(String password) {
+        return PasswordUtil.verifyPassword(password, this.password);
     }
 
     public void setStatus(AccountStatus status) { this.status = status; }
