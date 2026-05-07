@@ -1,5 +1,5 @@
 public class PostalNotification extends Notification {
-    private Address address;
+    private String address;
 
     public PostalNotification(int notificationId, String content, String address) {
         super(notificationId, content);
@@ -14,7 +14,7 @@ public class PostalNotification extends Notification {
         return true;
     }
 
-    public Address getAddress() {
+    public String getAddress() {
         return address;
     }
 }
