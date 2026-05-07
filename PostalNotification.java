@@ -1,7 +1,7 @@
 public class PostalNotification extends Notification {
     private Address address;
 
-    public PostalNotification(int notificationId, String content, Address address) {
+    public PostalNotification(int notificationId, String content, String address) {
         super(notificationId, content);
         this.address = address;
     }
